@@ -1,4 +1,3 @@
-import TailWindSearchBox from '@/app/components/tailwind/TailWindSearchBox'
 import React from 'react'
 import Link from 'next/link'
 

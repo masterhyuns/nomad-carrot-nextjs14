@@ -5,12 +5,14 @@ interface FormInputProps {
   placeholder: string
   required: boolean
   errors: string[]
+  name: string
 }
 const FormInput: FC<FormInputProps> = ({
   type,
   placeholder,
   required,
   errors,
+  name,
 }) => {
   return (
     <div className="flex flex-col gap-2">
@@ -20,6 +22,7 @@ const FormInput: FC<FormInputProps> = ({
         type={type}
         placeholder={placeholder}
         required={required}
+        name={name}
       />
       <span className="text-red-500 font-medium">
         {errors.map((error, index) => (
