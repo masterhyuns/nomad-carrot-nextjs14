@@ -24,7 +24,7 @@ const FormInput: FC<FormInputProps> = ({
         required={required}
         name={name}
       />
-      <span className="text-red-500 font-medium">
+      <span className="flex flex-col gap-2 text-red-500 font-medium">
         {errors.map((error, index) => (
           <span key={index} className={'text-red-500 font-medium'}>
             {error}
